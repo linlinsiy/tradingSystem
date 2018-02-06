@@ -1,0 +1,252 @@
+syntax = "proto2";
+option java_package = "com.sanjin.bean";
+option java_outer_classname = "StockPoolClientProtos";
+
+enum CLIENTMSGTYPE {
+	Client_Order = 1;
+	Client_Position = 2;
+	Client_Execution_Report = 3;
+	Quotation_ = 4;
+	Client_Control_Message = 5;
+	Client_Login = 6;
+	Client_Login_Response = 7;
+	Client_Cancel_Order = 8;
+	Stock_Info = 9;
+	Query_Request = 10;
+	Client_User_Info = 11;
+	Order_Place_Response = 12;//add by gao 20180111
+	Cancel_Order_Place_Response = 13;
+};
+
+enum MSGUSETYPE {
+	Notification = 1;//用于系统主动发消息给gui
+	Response = 2;//用于gui向系统请求消息的返回
+	Request = 3;//用于gui向系统请求消息
+};
+
+enum QueryType {
+	QUERY_STOCK = 1;//查询股票信息
+	QUERY_POSITION = 2;//查询持仓信息
+	QUERY_ORDER = 3;//查询订单信息
+	QUERY_ACCOUNT = 4;//查询资金信息
+	QUERY_USERINFO = 5;//查询用户信息，返货自己和所有孩子的用户信息
+}
+
+enum Direction {
+	BUY = 0;
+	SELL = 1;
+};
+
+enum Exchange {
+	HKSH = 1;//沪股通
+	HKSZ = 2;//深股通
+	SH = 3;//上海A股
+	SZ = 4;//深圳A股
+}
+
+enum LoginStatus {
+	SUCCESS = 1;//登录成功
+	FAILED = 2;//登录成功
+};
+
+enum OrderStatus {
+	STATUS_NOTTRADED = 0;
+	STATUS_PARTTRADED = 1;
+	STATUS_ALLTRADED = 2;
+	STATUS_CANCELLING = 4;
+	STATUS_CANCELLED = 5;
+	STATUS_REJECTED = 6;
+	STATUS_UNKNOWN = 7;
+	STATUS_PARTREJECTED = 8;
+};
+
+enum PositionStatus {
+	NORMAL = 1;
+	BUY_FORBIDDEN = 2;
+	SELL_FORBIDDEN = 3;
+	ALL_FORBIDDEN = 4;
+}
+
+message SanjinClientMessage {
+	required CLIENTMSGTYPE msgType = 1;
+	required MSGUSETYPE msgUseType = 2;
+	repeated ClientOrder clientOrder = 3;
+	repeated ClientPosition clientPosition = 4;
+	optional ClientExecutionReport executionReport = 5;
+	optional Quotation quotation = 6;
+	optional ClientAccount clientAccount = 7;
+	optional ClientControlMessage controlMessage = 8;
+	repeated ClientCancelOrder clientCancelOrder = 9;
+	repeated StockInfo stockInfo = 10;
+	optional ClientLoginResponse clientLoginResponse = 11;
+	optional QueryRequest queryRequest = 12;
+	optional ClientLogin clientLogin = 13;
+	repeated ClientUserInfo userInfos = 14;
+	optional OrderPlaceResponse orderPlaceResponse=15;//add by gao 20180111
+	optional CancelOrderPlaceResponse cancelOrderPlaceResponse = 16;
+	optional string Sequence = 17;	//add by gao 20180111
+};
+
+message OrderPlaceResponse {
+	required int64 status= 1; //add by gao 20180111 0代表失败 1代表成功
+}
+
+message CancelOrderPlaceResponse {
+	required int64 status= 1; //add by gao 20180111 0代表失败 1代表成功
+}
+
+message ClientLogin {
+	required string clientId = 1;
+	required string password = 2;
+	optional string verificationCode = 3;
+}
+
+message QueryRequest {
+	required string clientId = 1;
+	required QueryType queryType = 2;
+	optional string stock = 3;
+	optional Exchange exchange = 4;
+}
+
+message StockInfo {
+	required string symbol = 1;
+	required Exchange exchange = 2;
+	required string stkName = 3;
+	required double preClosePrice = 4;
+	optional double upperLimitPrice = 5;
+	optional double lowerLimitPrice = 6;
+	required double minimumPriceChange = 7;
+	required int32 qtyPerHand = 8;
+}
+
+message ClientLoginResponse {
+	required string clientId = 1;
+	required LoginStatus loginStatus = 2;
+	optional string clientName = 3;
+	optional string loginFailMsg = 4;
+	optional string organization = 5;
+}
+
+
+message ClientCancelOrder {
+	
+	//股票代码
+	required string symbol = 1;
+	//下单方向
+	required Direction direction = 2;
+	
+	//撤单号
+	required string cancelOrderid = 3;
+	//原订单号
+	required string origOrderid = 4;
+	
+	required string clientId = 5;
+}
+
+message ClientOrder {
+	
+	//股票代码
+	required string symbol = 1;
+	//市场代码
+	required Exchange exchange = 2;
+	//我们自己记录的client orderid，每日唯一
+	optional string clientOrderId = 3;
+	//下单方向
+	required Direction direction = 4;
+	//下单价格
+	required double price = 5;
+	//下单数量
+	required int64 totalVolume = 6;
+	//成交均价
+	required double tradedPrice = 7;
+	//成交数量
+	required int64 tradedVolume = 8;
+	//下单时间
+	optional int64 orderTime = 9;
+	//撤单时间
+	optional int64 cancelTime = 10;
+	//订单状态
+	required OrderStatus orderStatus = 11;
+	//错误消息
+	optional string message = 12;
+	
+	required string clientId = 13;
+};
+
+message ClientPosition {
+	//股票代码
+	required string symbol = 1;
+	//市场代码
+	required Exchange exchange = 2;
+	//券商id
+	required string clientId = 3;
+	//仓位权限
+	required PositionStatus positionStatus = 4;
+	//持仓数量
+	required int64 position = 5;
+	//已经买入仓位
+	optional int64 posLong = 6;
+	//已经卖出仓位
+	optional int64 posShort = 7;
+	//买入锁定仓位
+	optional int64 posLongPending = 8;
+	//卖出锁定仓位
+	optional int64 posShortPending = 9;
+	//敞口数量-负数为多方敞口，正数为空方敞口
+	optional int64 openQty = 10;
+	//召回数量
+	optional int64 recallQty = 11;
+};
+
+
+message ClientExecutionReport {
+
+};
+
+
+message Quotation {
+	optional fixed32 iTradingDay = 1;//日期
+	optional int32 iTime = 2;//交易所时间
+	optional int32 iStatus = 3;//状态
+	optional string strExchId = 4;//市场
+	optional string strCode = 5;//合约代码
+	optional int32 iLocalTime = 6;//本地时间
+	optional float fPreClose = 7;//前收盘价
+	optional float fTdClose = 8;//今收收盘价
+	optional float fOpen = 9;//开盘价
+	optional float fHigh = 10;//最高价
+	optional float fLow = 11;//最低价
+	optional float fLast = 12;//最新价
+	repeated float fAskPrice = 13 [packed=true];
+	repeated int32 iAskVol = 14 [packed=true];
+	repeated float fBidPrice = 15 [packed=true];
+	repeated int32 iBidVol = 16 [packed=true];
+	optional int64 lVolume = 17;//成交总量
+	optional int64 lTurnover = 18;//成交总金额
+	optional int32 iIOPV = 19;//IOPV净值估值
+	optional int64 iPreOpenInterest = 20;//昨持仓量
+	optional int64 iOpenInterest = 21;//持仓量
+	optional float fPreSettlePrice = 22;//昨结算
+	optional float fSettlePrice = 23;//今结算
+	optional float fHighLimited = 24;//涨停板价
+	optional float fLowLimited = 25;//跌停板价
+	optional float fPreDelta = 26;//昨虚实度
+	optional float fCurrDelta = 27;//今虚实度
+	optional float fNomialPrice = 28;//按盘价
+	optional string strTradeStatus = 29; //产品交易阶段（产品状态）
+	optional string strCloseFlag = 30; //停牌标志     
+}
+
+message ClientControlMessage {
+}
+
+message ClientAccount {
+	required string clientId = 1;
+	required double balance = 2;
+}
+
+message ClientUserInfo {
+	required string clientId = 1;
+	required string clientName = 2;
+	optional string organization = 5;
+}

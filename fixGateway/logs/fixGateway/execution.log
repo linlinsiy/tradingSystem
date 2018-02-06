@@ -1,0 +1,247 @@
+2018.01.15 at 15:06:34 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 90 sendOrderReport2Client - rejected
+2018.01.15 at 15:06:43 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 111 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: SH
+  brokerId: "1"
+  brokerOrderId: "1"
+  direction: BUY
+  price: 22.6
+  totalVolume: 400
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115150634
+  orderStatus: STATUS_REJECTED
+}
+
+2018.01.15 at 15:11:32 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 90 sendOrderReport2Client - rejected
+2018.01.15 at 15:11:35 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 111 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: SH
+  brokerId: "1"
+  brokerOrderId: "1"
+  direction: BUY
+  price: 22.3
+  totalVolume: 300
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115151132
+  orderStatus: STATUS_REJECTED
+}
+
+2018.01.15 at 15:21:16 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 73 sendOrderReport2Client - Not Traded
+2018.01.15 at 15:21:18 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: SH
+  brokerId: "1"
+  brokerOrderId: "10"
+  direction: BUY
+  price: 22.5
+  totalVolume: 1000
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115152116
+  orderStatus: STATUS_NOTTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 15:23:36 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 90 sendOrderReport2Client - rejected
+2018.01.15 at 15:23:36 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: SH
+  brokerId: "1"
+  brokerOrderId: "10"
+  clientOrderId: "201801151523390000000"
+  direction: BUY
+  price: 22.3
+  totalVolume: 800
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115152336
+  orderStatus: STATUS_REJECTED
+  message: "order fail"
+}
+
+2018.01.15 at 15:31:35 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 73 sendOrderReport2Client - Not Traded
+2018.01.15 at 15:31:35 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11"
+  clientOrderId: "201801151531380000001"
+  direction: BUY
+  price: 22.3
+  totalVolume: 600
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115153135
+  orderStatus: STATUS_NOTTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 15:54:53 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 90 sendOrderReport2Client - rejected
+2018.01.15 at 15:54:53 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "10"
+  clientOrderId: "201801151554540000000"
+  direction: BUY
+  price: 22.3
+  totalVolume: 500
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115155453
+  orderStatus: STATUS_REJECTED
+  message: "order fail"
+}
+
+2018.01.15 at 15:57:28 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 73 sendOrderReport2Client - Not Traded
+2018.01.15 at 15:57:28 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11557290"
+  clientOrderId: "201801151557290000000"
+  direction: BUY
+  price: 22.3
+  totalVolume: 600
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115155727
+  orderStatus: STATUS_NOTTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 15:57:28 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 82 sendOrderReport2Client - All Traded
+2018.01.15 at 15:57:28 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11557290"
+  clientOrderId: "201801151557290000000"
+  direction: BUY
+  price: 22.3
+  totalVolume: 600
+  tradedPrice: 22.3
+  tradedVolume: 600
+  orderTime: 20180115155727
+  orderStatus: STATUS_ALLTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 16:26:40 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 73 sendOrderReport2Client - Not Traded
+2018.01.15 at 16:26:40 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11626400"
+  clientOrderId: "201801151626400000000"
+  direction: BUY
+  price: 22.3
+  totalVolume: 700
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115162639
+  orderStatus: STATUS_NOTTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 16:26:40 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 82 sendOrderReport2Client - All Traded
+2018.01.15 at 16:26:40 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11626400"
+  clientOrderId: "201801151626400000000"
+  direction: BUY
+  price: 22.3
+  totalVolume: 700
+  tradedPrice: 22.3
+  tradedVolume: 700
+  orderTime: 20180115162639
+  orderStatus: STATUS_ALLTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 16:29:51 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 73 sendOrderReport2Client - Not Traded
+2018.01.15 at 16:29:51 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11629510"
+  clientOrderId: "201801151629510000000"
+  direction: BUY
+  price: 22.3
+  totalVolume: 800
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115162951
+  orderStatus: STATUS_NOTTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 16:29:51 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 82 sendOrderReport2Client - All Traded
+2018.01.15 at 16:29:51 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11629510"
+  clientOrderId: "201801151629510000000"
+  direction: BUY
+  price: 22.3
+  totalVolume: 800
+  tradedPrice: 22.3
+  tradedVolume: 800
+  orderTime: 20180115162951
+  orderStatus: STATUS_ALLTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 16:33:45 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 73 sendOrderReport2Client - Not Traded
+2018.01.15 at 16:33:45 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11633450"
+  clientOrderId: "201801151633450000000"
+  direction: BUY
+  price: 23.0
+  totalVolume: 700
+  tradedPrice: 0.0
+  tradedVolume: 0
+  orderTime: 20180115163345
+  orderStatus: STATUS_NOTTRADED
+  message: "New ack"
+}
+
+2018.01.15 at 16:33:45 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 82 sendOrderReport2Client - All Traded
+2018.01.15 at 16:33:45 CST INFO  sanjin.quickfix.utils.mina.GatewayServer 113 sendOrderReport2Client - msgType: Broker_Order
+brokerOrder {
+  symbol: "600690"
+  exchange: HKSH
+  brokerId: "1"
+  brokerOrderId: "11633450"
+  clientOrderId: "201801151633450000000"
+  direction: BUY
+  price: 23.0
+  totalVolume: 700
+  tradedPrice: 23.0
+  tradedVolume: 700
+  orderTime: 20180115163345
+  orderStatus: STATUS_ALLTRADED
+  message: "New ack"
+}
+

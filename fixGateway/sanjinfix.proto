@@ -1,0 +1,109 @@
+syntax = "proto2";
+//import "google/protobuf/timestamp.proto";
+import "sanjinclient.proto";
+option java_package = "com.sanjin.bean";
+option java_outer_classname = "StockPoolGatewayProtos";
+
+enum GTMSGTYPE {
+	Broker_Order = 1;
+	Broker_Position = 2;
+	Broker_Execution_Report = 3;
+	Broker_Account = 4;
+	Broker_Control_Message = 5;
+	Broker_Cancel_Order = 6;
+	
+};
+
+
+message SanjinGTMessage {
+	required GTMSGTYPE msgType = 1;
+	optional BrokerOrder brokerOrder = 2;
+	optional BrokerPosition brokerPosition = 3;
+	optional BrokerExecutionReport executionReport = 4;
+	optional BrokerAccount brokerAccount = 5;
+	optional BrokerControlMessage controlMessage = 6;
+	optional BrokerCancelOrder cancelOrder = 7;
+};
+
+message BrokerOrder {
+	//股票代码
+	required string symbol = 1;
+	//市场代码
+	required Exchange exchange = 2;
+	//券商id
+	required string brokerId = 3;
+	//券商返回的orderid
+	required string brokerOrderId = 4;
+	//我们自己记录的client orderid
+	optional string clientOrderId = 5;
+	//下单方向
+	required Direction direction = 6;
+	//下单价格
+	required double price = 7;
+	//下单数量
+	required int64 totalVolume = 8;
+	//成交均价
+	required double tradedPrice = 9;
+	//成交数量
+	required int64 tradedVolume = 10;
+	//下单时间
+	optional int64 orderTime = 11;
+	//撤单时间
+	optional int64 cancelTime = 12;
+	//订单状态
+	required OrderStatus orderStatus = 13;
+	//错误信息
+	optional string message = 14;
+};
+
+message BrokerCancelOrder {
+	//股票代码
+	required string symbol = 1;
+	//下单方向
+	required Direction direction = 2;
+	
+	//撤单号
+	required string cancelOrderid = 3;
+	//原订单号
+	required string origOrderid = 4;
+}
+
+message BrokerPosition {
+	//股票代码
+	required string symbol = 1;
+	//市场代码
+	required Exchange exchange = 2;
+	//券商id
+	required string brokerId = 3;
+	//持仓数量
+	required int64 position = 4;
+	//已经买入仓位
+	optional int64 posLong = 5;
+	//已经卖出仓位
+	optional int64 posShort = 6;
+	//买入锁定仓位
+	optional int64 posLongPending = 7;
+	//卖出锁定仓位
+	optional int64 posShortPending = 8;
+	//敞口数量-负数为多方敞口，正数为空方敞口
+	optional int64 openQty = 9;
+	//可平数量
+	optional int64 leavesQty = 10;
+};
+
+
+message BrokerExecutionReport {
+
+};
+
+message BrokerAccount {
+	//券商id
+	required string brokerId = 1;
+	//account
+	required string account = 2;
+	//可用资金
+	required double available = 3;
+};
+
+message BrokerControlMessage {
+}
