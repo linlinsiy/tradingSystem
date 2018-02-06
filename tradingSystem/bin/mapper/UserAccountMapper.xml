@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC     
+    "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sanjin.cache.mapper.UserAccountMapper">
+	<resultMap id="UserAccountResultMap" type="DbUserAccount">
+		<result property="userId" column="userId" />
+		<result property="usableBalance" column="usableBalance" />
+		<result property="initBalance" column="initBalance" />
+		<result property="frozenBalance" column="frozenBalance" />
+	</resultMap>
+	<sql id="key">
+		userId
+		<trim prefix="," suffixOverrides=",">
+			<if test="usableBalance!=null">usableBalance,</if>
+			<if test="initBalance!=null">initBalance,</if>
+			<if test="frozenBalance!=null">frozenBalance,</if>
+		</trim>
+	</sql>
+	<sql id="value">
+		#{userId}
+		<trim prefix="," suffixOverrides=",">
+			<if test="usableBalance!=null">#{usableBalance},</if>
+			<if test="initBalance!=null">#{initBalance},</if>
+			<if test="frozenBalance!=null">#{frozenBalance},</if>
+		</trim>
+	</sql>
+	<select id="getAllUserAccount" resultMap="UserAccountResultMap">
+		<![CDATA[
+			select
+				a.userId,
+				a.usableBalance,
+				a.initBalance,
+				a.frozenBalance
+			from
+				UserAccount a
+		]]>
+	</select>
+ <select id="getUserAccountById" resultType="DbUserAccount">
+ 	SELECT * FROM UserAccount WHERE userId=#{userId}
+ </select>
+	<update id="updateUserAccount" parameterType="DbUserAccount">
+		UPDATE UserAccount
+	 	<trim prefix="SET" suffixOverrides=",">
+	 		<if test="usableBalance!=null">usableBalance=#{usableBalance},</if>
+	 		<if test="initBalance!=null">initBalance=#{initBalance},</if>
+	 		<if test="frozenBalance!=null">frozenBalance=#{frozenBalance},</if>
+	 	</trim>
+	 	WHERE userId=#{userId}
+	</update>
+	<insert id="insertUserAccount" parameterType="DbUserAccount">
+		INSERT INTO UserAccount(<include refid="key"/>) VALUES(<include refid="value"/>)
+	</insert>
+</mapper>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sanjin.cache.mapper.StockMapper" >
+  <resultMap id="StockResultMap" type="DbStock" >
+      <result column="stockId" property="stockId" jdbcType="CHAR" />
+      <result column="marketId" property="marketId" jdbcType="CHAR" />
+      <result column="stockName" property="stockName" jdbcType="CHAR" />
+      <result column="stockCode" property="stockCode" jdbcType="CHAR" />
+      <result column="stockClose" property="stockClose" jdbcType="DOUBLE" />
+      <result column="closeDate" property="closeDate" jdbcType="CHAR" />
+  </resultMap>
+  <sql id="key" >
+    stockId
+    <trim prefix="," suffixOverrides=",">
+  		<if test="marketId!=null">marketId</if>
+  		<if test="stockName!=null">stockName</if>
+  		<if test="stockCode!=null">stockCode</if>
+  		<if test="stockClose!=null">stockClose</if>  		
+    </trim>
+  </sql>
+  <sql id="value" >
+     #{stockId}
+    <trim prefix="," suffixOverrides=",">
+  		<if test="marketId!=null">#{marketId}</if>
+  		<if test="stockName!=null">#{stockName}</if>
+  		<if test="stockCode!=null">#{stockCode}</if>
+  		<if test="stockClose!=null">#{stockClose}</if>  		
+    </trim>
+  </sql>
+ <select id="getAllStocks" resultMap="StockResultMap">
+   SELECT * FROM StockInfo
+ </select>
+ <select id="getStockById" resultType="DbStock">
+ 	SELECT * FROM StockInfo WHERE stockId=#{0}
+ </select>
+ <select id="getStockByCondition" parameterType="DbStock">
+ 	SELECT * FROM StockInfo
+ 	<trim prefix="WHERE" prefixOverrides="AND | OR">
+ 		<if test="marketId!=null">marketId=#{marketId}</if>
+  		<if test="stockName!=null">stockName=#{stockName}</if>
+  		<if test="stockCode!=null">stockCode=#{stockCode}</if>
+  		<if test="stockClose!=null">stockClose=#{stockClose}</if>
+ 	</trim>
+ </select>
+ 
+ <update id="updateStock" parameterType="DbStock">
+ 	UPDATE StockInfo
+ 	<trim prefix="SET" suffixOverrides=",">
+ 		<if test="marketId!=null">marketId=#{marketId}</if>
+  		<if test="stockName!=null">stockName=#{stockName}</if>
+  		<if test="stockCode!=null">stockCode=#{stockCode}</if>
+  		<if test="stockClose!=null">stockClose=#{stockClose}</if>
+ 	</trim>
+ 	WHERE stockId=#{stockId}
+ </update>
+ 
+ <delete id="deleteStockById">
+ 	DELETE FROM StockInfo WHERE stockId=#{0}
+ </delete>
+ 
+ <insert id="insertStock" parameterType="DbStock">
+ 	INSERT INTO StockInfo(<include refid="key"/>) VALUES(<include refid="value"/>)
+ </insert>
+</mapper>

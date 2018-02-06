@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sanjin.cache.mapper.BrokerInfoMapper" >
+  <resultMap id="BrokerResultMap" type="DbBroker" >
+      <id column="brokerId" property="brokerId" jdbcType="CHAR" />
+      <result column="brokerName" property="brokerName" jdbcType="CHAR" />
+      <result column="brokerType" property="brokerType" jdbcType="INTEGER" />
+      <result column="account" property="account" jdbcType="CHAR" />
+      <result column="password" property="password" jdbcType="CHAR" />
+      <result column="gatewayIp" property="gatewayIp" jdbcType="CHAR" />
+      <result column="gatewayPort" property="gatewayPort" jdbcType="INTEGER"/>
+      <result column="isActive" property="isActive" jdbcType="TINYINT"/>
+      <result column="feeRatio" property="feeRatio" jdbcType="DOUBLE"/>
+      <result column="stampRatio" property="stampRatio" jdbcType="DOUBLE"/>
+      <result column="exchRatio" property="exchRatio" jdbcType="DOUBLE"/>
+      <result column="fundAccount" property="fundAccount" jdbcType="CHAR"/>
+      <result column="isHKTrade" property="isHkTrade" jdbcType="TINYINT"/>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    brokerId, brokerName, brokerType, account, password, gatewayIp, gatewayPort, isActive, feeRatio, stampRatio, exchRatio, fundAccount, isHKTrade
+  </sql>
+ <select id="getAllBrokers" resultMap="BrokerResultMap">
+   SELECT
+    <include refid="Base_Column_List"/>
+   FROM
+    BrokerInfo
+ </select>
+ <select id="getBrokerById" resultType="DbBroker">
+ 	SELECT * FROM BrokerInfo WHERE brokerId=#{brokerId}
+ </select>
+ <select id="getBrokersByCondition" parameterType="DbBroker" resultMap="BrokerResultMap">
+ 	SELECT * FROM BrokerInfo 
+ 	<trim prefix="WHERE" prefixOverrides="AND | OR">
+ 		<if test="brokerName!=null">brokerName=#{brokerName}</if>
+ 		<if test="brokerType!=null">brokerType=#{brokerType}</if>
+ 		<if test="account!=null">account=#{account}</if>
+ 		<if test="password!=null">password=#{password}</if>
+ 		<if test="gatewayIp!=null">gatewayIp=#{gatewayIp}</if>
+ 		<if test="gatewayPort!=null">gatewayPort=#{gatewayPort}</if>
+ 		<if test="isActive!=null">isActive=#{isActive}</if>
+ 		<if test="feeRatio!=null">feeRatio=#{feeRatio}</if>
+ 		<if test="stampRatio!=null">stampRatio=#{stampRatio}</if>
+ 		<if test="exchRatio!=null">exchRatio=#{exchRatio}</if>
+ 		<if test="fundAccount!=null">fundAccount=#{fundAccount}</if>
+ 	</trim>
+ </select>
+ 
+</mapper>

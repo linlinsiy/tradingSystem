@@ -1,0 +1,256 @@
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123 positionStatus: NORMAL position: -2000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 11000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002241 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002572 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 4500 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123 positionStatus: NORMAL position: 10000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234 positionStatus: NORMAL position: 8000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-234 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 6000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 33000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234-345 positionStatus: NORMAL position: 7000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123-123 positionStatus: NORMAL position: 4000 posLong: 0 posShort: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerCache 60 refreshFromDb - DbBroker [brokerId=1, brokerName=sanjin, brokerType=1, account=admin, password=admin, gatewayIp=172.31.13.10, gatewayPort=8080, isActive=1, feeRatio=2.0, stampRatio=2.0, exchRatio=2.0, fundAccount=10000, isHkTrade=1]
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 position: 60000 posLong: 500 posShort: 0 posLongPending: 200 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000568 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000028 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002236 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 600690 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002241 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002572 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002583 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:08 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002050 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:48:17 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@7ea45945
+2018.01.18 at 16:48:17 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@2702c815
+2018.01.18 at 16:48:17 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@5dc3808d
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123 positionStatus: NORMAL position: -2000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 11000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002241 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002572 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 4500 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123 positionStatus: NORMAL position: 10000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234 positionStatus: NORMAL position: 8000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-234 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 6000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 33000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234-345 positionStatus: NORMAL position: 7000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123-123 positionStatus: NORMAL position: 4000 posLong: 0 posShort: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerCache 60 refreshFromDb - DbBroker [brokerId=1, brokerName=sanjin, brokerType=1, account=admin, password=admin, gatewayIp=172.31.13.10, gatewayPort=8080, isActive=1, feeRatio=2.0, stampRatio=2.0, exchRatio=2.0, fundAccount=10000, isHkTrade=1]
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 position: 60000 posLong: 500 posShort: 0 posLongPending: 200 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000568 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000028 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002236 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 600690 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002241 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002572 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002583 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:16 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002050 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:50:24 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@3ce7d135
+2018.01.18 at 16:50:24 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@e934f60
+2018.01.18 at 16:50:24 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@e1eb833
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123 positionStatus: NORMAL position: -2000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 11000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002241 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002572 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 4500 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123 positionStatus: NORMAL position: 10000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234 positionStatus: NORMAL position: 8000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-234 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 6000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 33000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234-345 positionStatus: NORMAL position: 7000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123-123 positionStatus: NORMAL position: 4000 posLong: 0 posShort: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerCache 60 refreshFromDb - DbBroker [brokerId=1, brokerName=sanjin, brokerType=1, account=admin, password=admin, gatewayIp=172.31.13.10, gatewayPort=8080, isActive=1, feeRatio=2.0, stampRatio=2.0, exchRatio=2.0, fundAccount=10000, isHkTrade=1]
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 position: 60000 posLong: 500 posShort: 0 posLongPending: 200 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000568 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000028 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002236 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 600690 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002241 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002572 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002583 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:33 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002050 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:51:51 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@3f036780
+2018.01.18 at 16:51:51 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@25761b08
+2018.01.18 at 16:51:51 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@3e11d6eb
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123 positionStatus: NORMAL position: -2000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 11000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002241 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002572 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 4500 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123 positionStatus: NORMAL position: 10000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234 positionStatus: NORMAL position: 8000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-234 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 6000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 33000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234-345 positionStatus: NORMAL position: 7000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123-123 positionStatus: NORMAL position: 4000 posLong: 0 posShort: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerCache 60 refreshFromDb - DbBroker [brokerId=1, brokerName=sanjin, brokerType=1, account=admin, password=admin, gatewayIp=172.31.13.10, gatewayPort=8080, isActive=1, feeRatio=2.0, stampRatio=2.0, exchRatio=2.0, fundAccount=10000, isHkTrade=1]
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 position: 60000 posLong: 500 posShort: 0 posLongPending: 200 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000568 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000028 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002236 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 600690 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002241 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002572 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002583 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:06 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002050 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:56:17 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@783802d5
+2018.01.18 at 16:56:17 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@6cc84f44
+2018.01.18 at 16:56:17 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@65ca3115
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerCache 60 refreshFromDb - DbBroker [brokerId=1, brokerName=sanjin, brokerType=1, account=admin, password=admin, gatewayIp=172.31.13.10, gatewayPort=8080, isActive=1, feeRatio=2.0, stampRatio=2.0, exchRatio=2.0, fundAccount=10000, isHkTrade=1]
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerOrderCache 141 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 brokerOrderId: 11656330 clientOrderId: 201801181656330000000 direction: BUY price: 39.0 totalVolume: 200 tradedPrice: 0.0 tradedVolume: 0 orderStatus: STATUS_NOTTRADED message: New ack
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerOrderCache 141 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 brokerOrderId: 11657191 clientOrderId: 201801181657190000001 direction: BUY price: 41.13 totalVolume: 500 tradedPrice: 0.0 tradedVolume: 0 orderStatus: STATUS_NOTTRADED message: New ack
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientOrderCache 118 refreshFromDb - symbol: 002415 exchange: SZ clientOrderId: 201801181656330000000 direction: BUY price: 39.0 totalVolume: 0 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180118165634 cancelTime: 0 orderStatus: STATUS_NOTTRADED message:  clientId: 123
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientOrderCache 118 refreshFromDb - symbol: 603989 exchange: SH clientOrderId: 201801181657190000001 direction: BUY price: 41.13 totalVolume: 0 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180118165720 cancelTime: 0 orderStatus: STATUS_NOTTRADED message:  clientId: 123-123
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123 positionStatus: NORMAL position: -2000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 11000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002241 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002572 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 4500 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123 positionStatus: NORMAL position: 10000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234 positionStatus: NORMAL position: 8000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-234 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 6000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 33000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234-345 positionStatus: NORMAL position: 7000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123-123 positionStatus: NORMAL position: 4000 posLong: 0 posShort: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 position: 60000 posLong: 500 posShort: 0 posLongPending: 400 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 500 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000568 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000028 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002236 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 600690 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002241 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002572 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002583 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:58:01 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002050 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 16:58:12 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@4ebe4943
+2018.01.18 at 16:58:12 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@24e40005
+2018.01.18 at 16:58:12 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@16f3e39c
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerCache 60 refreshFromDb - DbBroker [brokerId=1, brokerName=sanjin, brokerType=1, account=admin, password=admin, gatewayIp=172.31.13.10, gatewayPort=8080, isActive=1, feeRatio=2.0, stampRatio=2.0, exchRatio=2.0, fundAccount=10000, isHkTrade=1]
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerOrderCache 141 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 brokerOrderId: 11656330 clientOrderId: 201801181656330000000 direction: BUY price: 39.0 totalVolume: 200 tradedPrice: 0.0 tradedVolume: 0 orderStatus: STATUS_NOTTRADED message: New ack
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerOrderCache 141 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 brokerOrderId: 11657191 clientOrderId: 201801181657190000001 direction: BUY price: 41.13 totalVolume: 500 tradedPrice: 0.0 tradedVolume: 0 orderStatus: STATUS_NOTTRADED message: New ack
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 002415 exchange: SZ clientOrderId: 201801181656330000000 direction: BUY price: 39.0 totalVolume: 0 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180118165634 cancelTime: 0 orderStatus: STATUS_NOTTRADED message:  clientId: 123
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 603989 exchange: SH clientOrderId: 201801181657190000001 direction: BUY price: 41.13 totalVolume: 0 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180118165720 cancelTime: 0 orderStatus: STATUS_NOTTRADED message:  clientId: 123-123
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123 positionStatus: NORMAL position: -2000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 11000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002241 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002572 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 4500 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123 positionStatus: NORMAL position: 10000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234 positionStatus: NORMAL position: 8000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-234 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 6000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 33000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234-345 positionStatus: NORMAL position: 7000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123-123 positionStatus: NORMAL position: 4000 posLong: 0 posShort: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 position: 60000 posLong: 500 posShort: 0 posLongPending: 400 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 500 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000568 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000028 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002236 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 600690 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002241 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002572 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002583 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 17:03:19 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002050 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.18 at 17:03:30 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@74351027
+2018.01.18 at 17:03:30 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@5f438a7a
+2018.01.18 at 17:03:30 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@42c7e42
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerCache 60 refreshFromDb - DbBroker [brokerId=1, brokerName=sanjin, brokerType=1, account=admin, password=admin, gatewayIp=172.31.13.10, gatewayPort=8080, isActive=1, feeRatio=2.0, stampRatio=2.0, exchRatio=2.0, fundAccount=10000, isHkTrade=1]
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerOrderCache 143 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 brokerOrderId: 11002122 clientOrderId: 201801191002120000002 direction: BUY price: 38.16 totalVolume: 2000 tradedPrice: 38.16 tradedVolume: 2000 orderTime: 20180119100212 orderStatus: STATUS_ALLTRADED message: New ack
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerOrderCache 143 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 brokerOrderId: 11001330 clientOrderId: 201801191001330000000 direction: BUY price: 37.0 totalVolume: 200 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180119100133 cancelTime: 20180119100142 orderStatus: STATUS_CANCELLED message: New ack
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerOrderCache 143 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 brokerOrderId: 10947110 clientOrderId: 201801190947110000000 direction: BUY price: 39.0 totalVolume: 200 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180119094718 cancelTime: 20180119094718 orderStatus: STATUS_CANCELLED message: 
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerOrderCache 143 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 brokerOrderId: 11003063 clientOrderId: 201801191003060000003 direction: SELL price: 38.17 totalVolume: 2000 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180119100306 cancelTime: 20180119100324 orderStatus: STATUS_CANCELLED message: New ack
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerOrderCache 143 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 brokerOrderId: 11003565 clientOrderId: 201801191003560000005 direction: SELL price: 38.13 totalVolume: 2000 tradedPrice: 38.14 tradedVolume: 2000 orderTime: 20180119100356 orderStatus: STATUS_ALLTRADED message: New ack
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerOrderCache 143 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 brokerOrderId: 11010526 clientOrderId: 201801191010520000008 direction: BUY price: 45.0 totalVolume: 100 tradedPrice: 45.0 tradedVolume: 100 orderTime: 20180119101052 orderStatus: STATUS_ALLTRADED message: New ack
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 002415 exchange: SZ clientOrderId: 201801191010520000008 direction: BUY price: 45.0 totalVolume: 100 tradedPrice: 45.0 tradedVolume: 100 orderTime: 20180119101052 orderStatus: STATUS_ALLTRADED message:  clientId: 123
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 002008 exchange: SZ clientOrderId: 201801191010150000007 direction: BUY price: 45.5 totalVolume: 100 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180119101015 orderStatus: STATUS_REJECTED message: 无法正确获取broker position clientId: 123
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 603989 exchange: SH clientOrderId: 201801191005110000006 direction: BUY price: 38.13 totalVolume: 9000 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180119100511 orderStatus: STATUS_REJECTED message: 无法正确获取broker position clientId: 123
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 603989 exchange: SH clientOrderId: 201801191003560000005 direction: SELL price: 38.13 totalVolume: 2000 tradedPrice: 38.14 tradedVolume: 2000 orderTime: 20180119100356 orderStatus: STATUS_ALLTRADED message:  clientId: 123
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 603989 exchange: SH clientOrderId: 201801191003060000003 direction: SELL price: 38.17 totalVolume: 2000 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180119100306 cancelTime: 20180119100324 orderStatus: STATUS_CANCELLED message:  clientId: 123
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 603989 exchange: SH clientOrderId: 201801191002120000002 direction: BUY price: 38.16 totalVolume: 2000 tradedPrice: 38.16 tradedVolume: 2000 orderTime: 20180119100212 orderStatus: STATUS_ALLTRADED message:  clientId: 123
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 603989 exchange: SH clientOrderId: 201801191001330000000 direction: BUY price: 37.0 totalVolume: 200 tradedPrice: 0.0 tradedVolume: 0 orderTime: 20180119100133 cancelTime: 20180119100142 orderStatus: STATUS_CANCELLED message:  clientId: 123
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientOrderCache 121 refreshFromDb - symbol: 002415 exchange: SZ clientOrderId: 201801190947110000000 direction: BUY price: 39.0 totalVolume: 200 tradedPrice: 0.0 tradedVolume: 0 orderTime: 0 cancelTime: 20180119094718 orderStatus: STATUS_CANCELLED message:  clientId: 123
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123 positionStatus: NORMAL position: 10000 posLong: 2000 posShort: 2000
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 11000 posLong: 100 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002241 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002572 exchange: HKSZ clientId: 123 positionStatus: NORMAL position: 4500 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123 positionStatus: NORMAL position: 11000 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234 positionStatus: NORMAL position: 8000 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-234 positionStatus: NORMAL position: 30000 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 6000 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 600690 exchange: HKSH clientId: 123-123 positionStatus: NORMAL position: 34000 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 002415 exchange: HKSZ clientId: 123-234-345 positionStatus: NORMAL position: 7000 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.ClientPositionCache 258 refreshFromDb - symbol: 603989 exchange: HKSH clientId: 123-123-123 positionStatus: NORMAL position: 4000 posLong: 0 posShort: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002415 exchange: HKSZ brokerId: 1 position: 60000 posLong: 100 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 603989 exchange: HKSH brokerId: 1 position: 60000 posLong: 2000 posShort: 2000 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000568 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 000028 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002236 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 600690 exchange: HKSH brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002241 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002572 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002583 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:27:44 CST INFO  com.sanjin.cache.BrokerPositionCache 228 refreshFromDb - symbol: 002050 exchange: HKSZ brokerId: 1 position: 60000 posLong: 0 posShort: 0 posLongPending: 0 posShortPending: 0
+2018.01.19 at 13:28:35 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@5fe80a92
+2018.01.19 at 13:28:35 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@5841a30a
+2018.01.19 at 13:28:35 CST ERROR com.sanjin.cache.StockCache 74 refreshFromDb - 没有收盘价com.sanjin.cache.bean.DbStock@24cc6e1f
+2018.02.05 at 11:34:05 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.02.05 at 11:34:06 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:34:06 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:34:06 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:34:06 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:34:06 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:34:06 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:34:14 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.02.05 at 11:36:04 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.02.05 at 11:36:04 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:36:04 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:36:04 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:36:04 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:36:04 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:36:04 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:37:22 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.02.05 at 11:37:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:37:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:37:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:37:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:37:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:37:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:38:01 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.02.05 at 11:38:01 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:38:01 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:38:01 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:38:01 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:38:01 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:38:01 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:38:14 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.02.05 at 11:38:14 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:38:14 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:38:14 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:38:14 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:38:14 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:38:14 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:54:32 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.02.05 at 11:54:33 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:54:33 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:54:33 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:54:33 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:54:33 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:54:33 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.db.DbManager 39 <init> - 连接数据库成功
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 12345 initBalance: 10000.0 usableBalance: 7000.0 frozenBalance: 3000.0
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 123 initBalance: 100000.0 usableBalance: 80000.0 frozenBalance: 20000.0
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 1234 initBalance: 7000.0 usableBalance: 3000.0 frozenBalance: 4000.0
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 222 initBalance: 10000.0 usableBalance: 5000.0 frozenBalance: 5000.0
+2018.02.05 at 11:56:22 CST INFO  com.sanjin.cache.AccountCache 83 refreshFromDb - clientId: 12345 initBalance: 10000.0 usableBalance: 7000.0 frozenBalance: 3000.0

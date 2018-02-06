@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sanjin.cache.mapper.BrokerPositionMapper" >
+  <resultMap id="BrokerPositionResultMap" type="DbBrokerPosition" >
+      <result column="userId" property="userId" jdbcType="CHAR" />
+      <result column="stockId" property="stockId" jdbcType="CHAR" />
+      <result column="marketId" property="marketId" jdbcType="CHAR" />
+      <result column="formerQty" property="formerQty" jdbcType="INTEGER" />
+      <result column="deltaQty" property="deltaQty" jdbcType="INTEGER" />
+      <result column="recallQty" property="recallQty" jdbcType="INTEGER" />
+      <result column="openQty" property="openQty" jdbcType="INTEGER" />
+      <result column="sendQty" property="sendQty" jdbcType="INTEGER" />
+      <result column="realQty" property="realQty" jdbcType="INTEGER" />
+      <result column="buyQty" property="buyQty" jdbcType="INTEGER" />
+      <result column="sellQty" property="sellQty" jdbcType="INTEGER" />
+      <result column="buyAmount" property="buyAmount" jdbcType="DOUBLE" />
+      <result column="sellAmount" property="sellAmount" jdbcType="DOUBLE" />
+      <result column="buyOrderQty" property="buyOrderQty" jdbcType="INTEGER" />      
+      <result column="sellOrderQty" property="sellOrderQty" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="key">
+  	userId, stockId
+  	<trim prefix="," suffixOverrides=",">
+  		<if test="marketId!=null">marketId,</if>
+ 		<if test="formerQty!=null">formerQty,</if>
+ 		<if test="deltaQty!=null">deltaQty,</if>
+ 		<if test="recallQty!=null">recallQty,</if>
+ 		<if test="openQty!=null">openQty,</if>
+ 		<if test="sendQty!=null">sendQty,</if>
+ 		<if test="realQty!=null">realQty,</if>
+ 		<if test="buyQty!=null">buyQty,</if>
+ 		<if test="sellQty!=null">sellQty,</if>
+ 		<if test="buyAmount!=null">buyAmount,</if>
+ 		<if test="sellAmount!=null">sellAmount,</if>
+ 		<if test="buyOrderQty!=null">buyOrderQty,</if>
+ 		<if test="sellOrderQty!=null">sellOrderQty,</if>
+  	</trim>
+  </sql>
+  <sql id="value">
+  	#{userId}, #{stockId}
+  	<trim prefix="," suffixOverrides=",">
+  		<if test="marketId!=null">#{marketId},</if>
+ 		<if test="formerQty!=null">#{formerQty},</if>
+ 		<if test="deltaQty!=null">#{deltaQty},</if>
+ 		<if test="recallQty!=null">#{recallQty},</if>
+ 		<if test="openQty!=null">#{openQty},</if>
+ 		<if test="sendQty!=null">#{sendQty},</if>
+ 		<if test="realQty!=null">#{realQty},</if>
+ 		<if test="buyQty!=null">#{buyQty},</if>
+ 		<if test="sellQty!=null">#{sellQty},</if>
+ 		<if test="buyAmount!=null">#{buyAmount},</if>
+ 		<if test="sellAmount!=null">#{sellAmount},</if>
+ 		<if test="buyOrderQty!=null">#{buyOrderQty},</if>
+ 		<if test="sellOrderQty!=null">#{sellOrderQty},</if>
+  	</trim>
+  </sql>
+ <select id="getAllBrokerPositions" resultMap="BrokerPositionResultMap">
+   SELECT * FROM TktBrokerPos
+ </select>
+ <select id="getBrokerPositionById" resultType="DbBrokerPosition">
+ 	SELECT * FROM TktBrokerPos WHERE userId=#{0} and stockId=#{1}
+ </select>
+ <select id="getBrokerPositionByCondition" parameterType="DbBrokerPosition">
+ 	SELECT * FROM TktBrokerPos
+ 	<trim prefix="WHERE" prefixOverrides="AND">
+ 		<if test="userId!=null">userId=#{userId} AND</if>
+ 		<if test="stockId!=null">stockId=#{stockId} AND</if>
+ 		<if test="marketId!=null">marketId=#{marketId} AND</if>
+ 		<if test="formerQty!=null">formerQty=#{formerQty} AND</if>
+ 		<if test="deltaQty!=null">deltaQty=#{deltaQty} AND</if>
+ 		<if test="recallQty!=null">recallQty=#{recallQty} AND</if>
+ 		<if test="openQty!=null">openQty=#{openQty} AND</if>
+ 		<if test="sendQty!=null">sendQty=#{sendQty} AND</if>
+ 		<if test="realQty!=null">realQty=#{realQty}AND</if>
+ 		<if test="buyQty!=null">buyQty=#{buyQty} AND</if>
+ 		<if test="sellQty!=null">sellQty=#{sellQty} AND</if>
+ 		<if test="buyAmount!=null">buyAmount=#{buyAmount} AND</if>
+ 		<if test="sellAmount!=null">sellAmount=#{sellAmount} AND</if>
+ 		<if test="buyOrderQty!=null">buyOrderQty=#{buyOrderQty} AND</if>
+ 		<if test="sellOrderQty!=null">sellOrderQty=#{sellOrderQty} AND</if>
+ 	</trim>
+ </select>
+
+ <update id="updateBrokerPosition" parameterType="DbBrokerPosition">
+ 	UPDATE TktBrokerPos
+ 	<trim prefix="SET" suffixOverrides=",">
+ 		<if test="marketId!=null">marketId=#{marketId},</if>
+ 		<if test="formerQty!=null">formerQty=#{formerQty},</if>
+ 		<if test="deltaQty!=null">deltaQty=#{deltaQty},</if>
+ 		<if test="recallQty!=null">recallQty=#{recallQty},</if>
+ 		<if test="openQty!=null">openQty=#{openQty},</if>
+ 		<if test="sendQty!=null">sendQty=#{sendQty},</if>
+ 		<if test="realQty!=null">realQty=#{realQty},</if>
+ 		<if test="buyQty!=null">buyQty=#{buyQty},</if>
+ 		<if test="sellQty!=null">sellQty=#{sellQty},</if>
+ 		<if test="buyAmount!=null">buyAmount=#{buyAmount},</if>
+ 		<if test="sellAmount!=null">sellAmount=#{sellAmount},</if>
+ 		<if test="buyOrderQty!=null">buyOrderQty=#{buyOrderQty},</if>
+ 		<if test="sellOrderQty!=null">sellOrderQty=#{sellOrderQty},</if>
+ 	</trim>
+ 	WHERE userId=#{userId} and stockId=#{stockId}
+ </update>
+ 
+ <delete id="deleteBrokerPositionById">
+ 	DELETE FROM TktBrokerPos WHERE userId=#{0} and stockId=#{1}
+ </delete>
+ 
+ <insert id="insertBrokerPosition" parameterType="DbBrokerPosition">
+ 	INSERT INTO TktBrokerPos(<include refid="key"/>) VALUES(<include refid="value"/>)
+ </insert>
+ 
+</mapper>

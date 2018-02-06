@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC     
+    "-//mybatis.org//DTD Mapper 3.0//EN"    
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sanjin.cache.mapper.UserInfoMapper">
+	<resultMap id="UserInfoResultMap" type="DbUserInfo">
+		<result property="userId" column="userId" />
+		<result property="userName" column="userName" />
+		<result property="registerDate" column="registerDate" />
+		<result property="password" column="password" />
+		<result property="lastLoginTime" column="lastLoginTime" />
+		<result property="userType" column="userType" />
+		<result property="available" column="available" />
+		<result property="parentId" column="parentId" />
+	</resultMap>
+	
+	<select id="getAllUsers" resultMap="UserInfoResultMap">
+		<![CDATA[
+			select
+				a.userId,
+				a.userName,
+				a.registerDate,
+				a.password,
+				a.lastLoginTime,
+				a.userType,
+				a.available,
+				a.parentId
+			from
+				UserInfo a
+		]]>
+	</select>
+ <select id="getUserById" resultType="DbUserInfo">
+ 	SELECT * FROM UserInfo WHERE userId=#{userId}
+ </select>
+ <select id="getUsersByCondition" parameterType="DbUserInfo" resultMap="UserInfoResultMap">
+ 	SELECT * FROM UserInfo 
+ 	<trim prefix="WHERE" prefixOverrides="AND | OR">
+ 		<if test="userName!=null">userName=#{userName}</if>
+ 		<if test="registerDate!=null">registerDate=#{registerDate}</if>
+ 		<if test="password!=null">password=#{password}</if>
+ 		<if test="lastLoginTime!=null">lastLoginTime=#{lastLoginTime}</if>
+ 		<if test="userType!=null">userType=#{userType}</if>
+ 		<if test="available!=null">available=#{available}</if>
+ 		<if test="parentId!=null">parentId=#{parentId}</if>
+ 		<if test="orgId!=null">orgId=#{orgId}</if>
+ 	</trim>
+ </select>
+</mapper>

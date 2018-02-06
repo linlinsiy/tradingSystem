@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sanjin.cache.mapper.BrokerOrderMapper" >
+  <resultMap id="BrokerOrderResultMap" type="DbBrokerOrder" >
+      <result column="orderId" property="orderId" jdbcType="CHAR" />
+      <result column="brokerId" property="brokerId" jdbcType="CHAR" />
+      <result column="clientOrderId" property="clientOrderId" jdbcType="CHAR" />
+      <result column="stockId" property="stockId" jdbcType="CHAR" />
+      <result column="marketId" property="marketId" jdbcType="CHAR" />
+      <result column="date" property="date" jdbcType="DATE" />
+      <result column="direction" property="direction" jdbcType="INTEGER" />
+      <result column="price" property="price" jdbcType="DOUBLE" />
+      <result column="tradePrice" property="tradePrice" jdbcType="DOUBLE" />
+      <result column="totalQty" property="totalVolume" jdbcType="INTEGER" />
+      <result column="tradeQty" property="tradeVolume" jdbcType="INTEGER" />
+      <result column="orderTime" property="orderTime" jdbcType="INTEGER" />
+      <result column="cancelTime" property="cancelTime" jdbcType="INTEGER" />      
+      <result column="status" property="orderStatus" jdbcType="INTEGER" />      
+      <result column="message" property="message" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="key">
+  	orderId
+  	<trim prefix="," suffixOverrides=",">
+  		<if test="brokerId!=null">brokerId,</if>
+  		<if test="clientOrderId!=null">clientOrderId,</if>
+ 		<if test="stockId!=null">stockId,</if>
+ 		<if test="marketId!=null">marketId,</if>
+ 		<if test="date!=null">date,</if>
+ 		<if test="direction!=null">direction,</if>
+ 		<if test="price!=null">price,</if>
+ 		<if test="tradePrice!=null">tradePrice,</if>
+ 		<if test="totalVolume!=null">totalQty,</if>
+ 		<if test="tradeVolume!=null">tradeQty,</if>
+ 		<if test="orderTime!=null">orderTime,</if>
+ 		<if test="cancelTime!=null">cancelTime,</if>
+ 		<if test="orderStatus!=null">status,</if>
+ 		<if test="message!=null">message,</if>
+  	</trim>
+  </sql>
+  <sql id="value">
+  	#{orderId}
+  	<trim prefix="," suffixOverrides=",">
+  		<if test="brokerId!=null">#{brokerId},</if>
+  		<if test="clientOrderId!=null">#{clientOrderId},</if>
+ 		<if test="stockId!=null">#{stockId},</if>
+ 		<if test="marketId!=null">#{marketId},</if>
+ 		<if test="date!=null">#{date},</if>
+ 		<if test="direction!=null">#{direction},</if>
+ 		<if test="price!=null">#{price},</if>
+ 		<if test="tradePrice!=null">#{tradePrice},</if>
+ 		<if test="totalVolume!=null">#{totalVolume},</if>
+ 		<if test="tradeVolume!=null">#{tradeVolume},</if>
+ 		<if test="orderTime!=null">#{orderTime},</if>
+ 		<if test="cancelTime!=null">#{cancelTime},</if>
+ 		<if test="orderStatus!=null">#{orderStatus},</if>
+ 		<if test="message!=null">#{message},</if>
+  	</trim>
+  </sql>
+ <select id="getAllBrokerOrders" resultMap="BrokerOrderResultMap">
+   SELECT * FROM BrokerOrder
+ </select>
+ 
+ <update id="updateBrokerOrder" parameterType="DbBrokerOrder">
+ 	UPDATE BrokerOrder
+ 	<trim prefix="SET" suffixOverrides=",">
+ 		<if test="orderStatus!=null">status=#{orderStatus},</if>
+ 		<if test="cancelTime!=null">cancelTime=#{cancelTime},</if>
+ 		<if test="tradeVolume!=null">tradeQty=#{tradeVolume},</if>
+ 		<if test="tradePrice!=null">tradePrice=#{tradePrice},</if>
+ 	</trim>
+ 	WHERE orderId=#{orderId}
+ </update>
+ 
+ <insert id="insertBrokerOrder" parameterType="DbBrokerOrder">
+ 	INSERT INTO BrokerOrder(<include refid="key"/>) VALUES(<include refid="value"/>)
+ </insert>
+ 
+</mapper>
